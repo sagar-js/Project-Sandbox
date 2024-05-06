@@ -1,3 +1,4 @@
+// Change text in specific interval
 const texts = ["mobile design", "web design", "3D animation"];
 
 let currentIndex = 0;
