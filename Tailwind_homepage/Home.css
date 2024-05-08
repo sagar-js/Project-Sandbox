@@ -172,21 +172,40 @@ html {
         margin: 100px 0;
         width: 100%;
         margin: 13% 0;
-        background-image: linear-gradient(rgb(228, 241, 255), white);
+        background-color: #f5fbfc;
         overflow: hidden;
 
-        /* viewbox 1 */
-        .viewBox {
-            position: absolute;
-            top: 110%;
-            height: 400px;
+        .spcer {
             width: 100%;
+            max-width: 100%;
+            position: absolute;
+            top: 25%;
             z-index: -1;
+
+            svg {
+                min-width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                /* background-image: linear-gradient(rgb(228, 241, 255), white); */
+                background-size: cover;
+            }
         }
 
-        .path {
-            stroke: none;
-            fill: rgb(228, 241, 255);
+        .spcer2 {
+            width: 100%;
+            max-width: 100%;
+            position: absolute;
+            top: 390%;
+            z-index: -1;
+            rotate: 180deg;
+            transform: scaleX(-1);
+            svg {
+                min-width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                /* background-image: linear-gradient(rgb(228, 241, 255), white); */
+                background-size: cover;
+            }
         }
 
         .section_3_div1 {
@@ -314,17 +333,17 @@ html {
                     padding: 10px 0;
                     color: grey;
                     font-size: 16px;
-                    line-height: 22px;
+                    line-height: 28px;
                     /* font-weight: 550; */
                     font-weight: bold;
-                    word-spacing: 5px;
+                    word-spacing: 3px;
                 }
 
                 button {
                     border: none;
                     font-size: 16px;
                     width: fit-content;
-                    padding: 16px 20px;
+                    padding: 14px 33px;
                     border-radius: 28px;
                     color: white;
                     font-weight: bold;
@@ -336,31 +355,28 @@ html {
             .section_3_div3_div2 {
                 display: flex;
                 flex-direction: column;
-                padding-left: 7%;
+                padding-left: 2%;
 
                 .one {
                     display: flex;
-                    /* align-items: center; */
-                    min-width: 85%;
-                    padding: 25px 0 25px 30px;
+                    min-width: 80%;
+                    padding: 28px 0 28px 30px;
                     margin: 20px 0;
                     box-shadow: 0 4px 8px 0 rgba(244, 243, 243, 0.916), 0 6px 20px 0 rgba(241, 239, 239, 0.938);
                 }
 
                 .two {
                     display: flex;
-                    /* align-items: center; */
-                    min-width: 85%;
-                    padding: 20px 0 20px 30px;
-                    margin: 20px 0 20px 45px;
+                    min-width: 80%;
+                    padding: 28px 0 28px 30px;
+                    margin: 20px 0 20px 62px;
                     box-shadow: 0 4px 8px 0 rgba(244, 243, 243, 0.916), 0 6px 20px 0 rgba(241, 239, 239, 0.938);
                 }
 
                 .three {
                     display: flex;
-                    /* align-items: center; */
-                    min-width: 85%;
-                    padding: 20px 0 20px 30px;
+                    min-width: 80%;
+                    padding: 28px 0 28px 30px;
                     margin: 20px 0 20px 15px;
                     box-shadow: 0 4px 8px 0 rgba(244, 243, 243, 0.916), 0 6px 20px 0 rgba(241, 239, 239, 0.938);
                 }
@@ -383,10 +399,12 @@ html {
                 .one_data {
                     display: flex;
                     flex-direction: column;
-                    line-height: 25px;
+                    line-height: 35px;
                     min-width: 80%;
 
                     h3 {
+                        font-size: 20px;
+                        font-weight: bold;
                         margin: 0;
                         padding: 0;
                     }
@@ -394,6 +412,7 @@ html {
                     p {
                         margin: 0;
                         padding: 0;
+                        font-size: 18px;
                     }
                 }
             }
@@ -471,28 +490,36 @@ html {
         .section4_div1 {
             display: flex;
             align-items: center;
-            padding: 0 70px;
+            padding: 0 100px;
             width: 100%;
-            /* transform: scale(0.9); */
 
             .section4_div1_one {
-                width: 28%;
-                margin-left: 49px;
+                width: 25%;
+                padding: 0;
+                margin: 0;
+                word-spacing: 4px;
 
                 h5 {
+                    width: 100%;
                     color: dodgerblue;
                     font-weight: bold;
-                    font-size: 16px;
+                    font-size: 15px;
+                    padding: 10px 0;
+                    margin: 0;
                 }
 
                 h3 {
+                    width: 100%;
                     font-weight: bold;
-                    font-size: 42px;
+                    font-size: 38px;
+                    padding: 10px 0;
+                    margin: 0;
                 }
 
                 p {
+                    width: 100%;
                     padding: 10px 0;
-                    font-size: 17px;
+                    font-size: 16px;
                 }
             }
 
@@ -500,10 +527,9 @@ html {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin: 5px;
-                width: 20%;
-                padding: 20px 50px;
                 font-size: 16px;
+                width: auto;
+                margin: 0 80px;
 
                 i {
                     font-size: 24px;
@@ -694,22 +720,40 @@ html {
 
         .section_5_div2 {
             display: flex;
-            flex-wrap: wrap;
             flex-direction: row;
             width: 100%;
             max-width: 100%;
-            padding: 0 5%;
+            padding: 0 7%;
+
+            .section_5_div2_1 {
+                display: flex;
+                flex-direction: column;
+                margin: 10px 15px;
+            }
+
+            .section_5_div2_2 {
+                display: flex;
+                flex-direction: column;
+                margin: 10px 15px;
+            }
+
+            .section_5_div2_3 {
+                display: flex;
+                flex-direction: column;
+                margin: 10px 15px;
+            }
 
             .section_5_div2_div {
-                padding: 20px 30px;
+                display: block;
+                height: fit-content;
+                width: 400px;
+                padding: 20px 35px;
+                margin-top: 25px;
                 font-size: 18px;
                 color: gray;
                 line-height: 27px;
                 font-weight: 550;
-                margin: 2%;
-                width: 29%;
-                height: 400px;
-                box-shadow: 0 4px 8px 0 rgba(244, 243, 243, 0.916), 0 6px 20px 0 rgba(241, 239, 239, 0.938);
+                box-shadow: 0 4px 8px 0 rgba(221, 222, 222, 0.916), 0 6px 20px 0 rgba(206, 206, 206, 0.938);
 
                 li {
                     list-style: none;
@@ -733,7 +777,7 @@ html {
                         flex-direction: column;
 
                         * {
-                            font-size: 20px;
+                            font-size: 24px;
                             margin: 0;
                             padding: 0;
                         }
@@ -815,6 +859,11 @@ html {
         color: white;
         padding: 120px 0;
 
+        svg {
+            position: absolute;
+            top: 850%;
+        }
+
         .section_6_div1 {
             display: flex;
             margin: 60px 0;
@@ -849,7 +898,7 @@ html {
         .section_6_div2 {
             display: flex;
             /* align-items: center; */
-            margin: 60px 0 0 0 ;
+            margin: 60px 0 0 0;
 
             div {
                 margin: 0 0 0 7%;
@@ -872,31 +921,34 @@ html {
 
                 li {
                     list-style: none;
+                    display: flex;
+                    width: fit-content;
+                    border: 0.1px solid gray;
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                    border-top-left-radius: 8px;
+                    align-items: center;
 
                     input {
                         font-size: 18px;
-                        padding: 9px 0;
-                        border-top: 0.2px solid;
-                        border-bottom: 0.2px solid;
-                        border-left: 0.2px solid;
-                        border-right: none;
                         border-bottom-left-radius: 8px;
                         border-top-left-radius: 8px;
+                        background: transparent;
+                        text-align: center;
+                        border: none;
                     }
 
                     button {
-                        font-size: 17px;
-                        padding: 10.5px 24px;
-                        border-top: none;
-                        border-bottom: none;
-                        border-left: none;
-                        border-right: 0.2px solid;
+                        font-size: 18px;
+                        height: 55px;
+                        width: 120px;
                         border-top-right-radius: 8px;
                         border-bottom-right-radius: 8px;
                         background-color: dodgerblue;
-                        border: none;
                         color: white;
                         font-weight: bold;
+                        border: none;
                     }
                 }
             }
