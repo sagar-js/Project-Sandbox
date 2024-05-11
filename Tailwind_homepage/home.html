@@ -1,590 +1,1009 @@
-<!DOCTYPE html>
-<html lang="en">
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Urbanist, sans-serif;
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link rel="stylesheet" href="./Home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Sandbox</title>
-</head>
+    * {
+        font-family: Urbanist, sans-serif;
+    }
 
-<body>
+    /* Section 1 */
+    .header {
+        position: fixed;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        background-color: white;
+        padding: 20px 80px 0px 55px;
+        margin-top: -0.6%;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(244, 243, 243, 0.916), 0 6px 20px 0 rgba(241, 239, 239, 0.938);
 
-    <!-- Section 1 -->
-    <section name="section 1">
+        .image {
+            margin-right: 370px;
+        }
 
-        <!-- Header -->
-        <div name="header" class="header">
-            <div class="list_div">
-                <ul>
-                    <li>Demos <i class="fa-sharp fa-solid fa-chevron-down"></i></li>
-                    <li>Pages <i class="fa-sharp fa-solid fa-chevron-down"></i></li>
-                    <li>Projects <i class="fa-sharp fa-solid fa-chevron-down"></i></li>
-                    <li>Blog <i class="fa-sharp fa-solid fa-chevron-down"></i></li>
-                    <li>Blocks <i class="fa-sharp fa-solid fa-chevron-down"></i></li>
-                    <li>Documentation <i class="fa-sharp fa-solid fa-chevron-down"></i></li>
-                    <li><button>Contact</button></li>
-                </ul>
-            </div>
-            <div class="image">
-                <img src="./Images/logo_sandbox.png" alt="sandbox logo">
-            </div>
-        </div>
-    </section>
+        .list_div {
 
+            ul {
+                display: flex;
+                align-items: center;
 
+                li {
+                    list-style: none;
+                    /* font-family: Urbanist, sans-serif; */
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: rgb(72, 70, 70);
+                    padding: 0 20px;
 
-    <!-- Section 2 -->
-    <section name="section 2">
-        <div class="section_2">
+                    i {
+                        font-size: 10px;
+                        font-weight: 600;
+                        color: rgb(29, 109, 238);
+                    }
 
-            <!-- Section 2 - part 1 -->
-            <div class="section_2_details">
-                <p class="details">A digital agency specializing on <br> <span id="change_Text">web design</span>
-                </p>
-                <p class="_bottom_details"> We are an award winning design agency that strongly believes in the power of
-                    creative ideas.</p>
-                <button>Get Started</button>
-            </div>
-            <div><img src="./Images/Home_Setion_1.png" alt=""></div>
-        </div>
-
-        <!-- Section 2 - part 2 -->
-        <div class="section2_bottom">
-            <div>
-                <p>Trusted by over 2K+ clients across the world</p>
-            </div>
-            <div class="section_image_div">
-                <ul>
-                    <li><img src="./Images/Home_line_image/L1.png" alt=""></li>
-                    <li><img src="./Images/Home_line_image/L2.png" alt=""></li>
-                    <li><img src="./Images/Home_line_image/L3.png" alt=""></li>
-                    <li><img src="./Images/Home_line_image/L4.png" alt=""></li>
-                    <li><img src="./Images/Home_line_image/L5.png" alt=""></li>
-                    <li><img src="./Images/Home_line_image/L6.png" alt=""></li>
-                    <li><img src="./Images/Home_line_image/L7.png" alt=""></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+                    button {
+                        font-size: 18px;
+                        /* font-family: Urbanist, sans-serif; */
+                        /* font-weight: 550; */
+                        color: white;
+                        padding: 11px 23px;
+                        background-color: rgb(90, 184, 246);
+                        /* background-color: dodgerblue; */
+                        border: none;
+                        border-top-right-radius: 28px;
+                        border-bottom-left-radius: 28px;
+                        border-bottom-right-radius: 28px;
+                        border-top-left-radius: 28px;
+                    }
+                }
+            }
+        }
+    }
 
 
+    /* Section 2 */
+    .section_2 {
+        display: flex;
+        align-items: center;
+        padding: 11% 10% 2% 8%;
+        /* margin: 100px 0; */
 
-    <!-- Section 3 -->
-    <Section name="section 3">
-        <div class="section_3">
+        div {
+            width: 45%;
+            margin: 0 1%;
+            /* border: 1px solid; */
 
-            <!-- Section 3 - part 1 -->
-            <div class="section_3_div1">
-                <div class="spcer">
-                    <svg id="visual" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                        <rect x="0" y="0" fill="#f5fbfc"></rect>
-                        <path
-                            d="M0 436L18.8 447.3C37.7 458.7 75.3 481.3 112.8 487.3C150.3 493.3 187.7 482.7 225.2 474.5C262.7 466.3 300.3 460.7 337.8 452.2C375.3 443.7 412.7 432.3 450.2 446.2C487.7 460 525.3 499 562.8 505C600.3 511 637.7 484 675.2 471.8C712.7 459.7 750.3 462.3 787.8 469.7C825.3 477 862.7 489 881.3 495L900 501L900 601L881.3 601C862.7 601 825.3 601 787.8 601C750.3 601 712.7 601 675.2 601C637.7 601 600.3 601 562.8 601C525.3 601 487.7 601 450.2 601C412.7 601 375.3 601 337.8 601C300.3 601 262.7 601 225.2 601C187.7 601 150.3 601 112.8 601C75.3 601 37.7 601 18.8 601L0 601Z"
-                            fill="#f5fbfc" stroke-linecap="round" stroke-linejoin="miter"></path>
-                    </svg>
-                </div>
+            img {
+                height: 500px;
+                width: auto;
+                padding-left: 10px;
+            }
+        }
 
-                <div class="spcer2">
-                    <svg id="visual" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                        <rect x="0" y="0" fill="#f5fbfc"></rect>
-                        <path
-                            d="M0 436L18.8 447.3C37.7 458.7 75.3 481.3 112.8 487.3C150.3 493.3 187.7 482.7 225.2 474.5C262.7 466.3 300.3 460.7 337.8 452.2C375.3 443.7 412.7 432.3 450.2 446.2C487.7 460 525.3 499 562.8 505C600.3 511 637.7 484 675.2 471.8C712.7 459.7 750.3 462.3 787.8 469.7C825.3 477 862.7 489 881.3 495L900 501L900 601L881.3 601C862.7 601 825.3 601 787.8 601C750.3 601 712.7 601 675.2 601C637.7 601 600.3 601 562.8 601C525.3 601 487.7 601 450.2 601C412.7 601 375.3 601 337.8 601C300.3 601 262.7 601 225.2 601C187.7 601 150.3 601 112.8 601C75.3 601 37.7 601 18.8 601L0 601Z"
-                            fill="#f5fbfc" stroke-linecap="round" stroke-linejoin="miter"></path>
-                    </svg>
-                </div>
+        .section_2_details {
+            align-items: center;
+            width: 500px;
+            height: 510px;
+            font-size: 52px;
+            font-weight: 600;
+            color: rgb(67, 62, 62);
+            padding: 0;
+            margin: 0 5% 1% -1.5%;
 
-                <p class="h4">WHAT WE DO?</p>
-                <br>
-                <div>
-                    <p class="h6">The service we offer is specifically <br> designed to meet your needs.</p>
-                </div>
-            </div>
+            .details {
+                padding-top: 80px;
+                margin: 0;
 
-            <!-- Section 3 - part 2 -->
-            <div class="section_3_div2">
-                <div>
-                    <img src="./Images/Home_Section_2_1.png" alt="" style="height: 200px; width: 80%;">
-                    <h5>Web Design</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce
-                        dapibus tellus.</p>
-                    <button>Learn More <span>&#8594;</span></button>
-                </div>
-                <div>
-                    <img src="./Images/Home_Section_2_2.png" alt="">
-                    <h5>Graphic Design</h5>
-                    <p>Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet. Sed posuere
-                        consectetur.</p>
-                    <button>Learn More <span>&#8594;</span></button>
-                </div>
-                <div>
-                    <img src="./Images/Home_Section_2_3.png" alt="" style="height: 200px; width: 80%;">
-                    <h5>3D Animation</h5>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna
-                        scelerisque.</p>
-                    <button>Learn More <span>&#8594;</span></button>
-                </div>
-            </div>
+                /* animation duration and fill mode */
+                .cssanimation {
+                    animation-duration: 1s;
+                    animation-fill-mode: both;
+                    color: dodgerblue;
+                    /* transform: translateY(0%); */
+                }
 
-            <!-- Section 3 - part 3 -->
-            <div class="section_3_div3">
+                .cssanimation {
+                    animation-name: moveFromTop;
+                }
 
-                <!-- Section 3 - part 3 - part 1  -->
-                <div class="section_3_div3_div1">
-                    <h3>OUR STRATEGY</h3>
-                    <h4>Here are 3 working steps to organize our projects.</h4>
-                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem
-                        malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam
-                        quis risus eget urna mollis.
-                        <br>
-                        <br>
-                        Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod
-                        semper. Aenean lacinia bibendum nulla sed consectetur.
-                    </p>
-                    <button>Learn More</button>
-                </div>
+                /* moveFromTop animation keyframes */
+                @keyframes moveFromTop {
+                    from {
+                        transform: translateY(-100%);
+                    }
+                }
+            }
 
-                <!-- Section 3 - part 3 - part 2 -->
-                <div class="section_3_div3_div2">
-                    <div class="one">
-                        <div class="number">01</div>
-                        <div class="one_data">
-                            <h3>Collect Ideas</h3>
-                            <p>Nulla vitae elit libero pharetra augue dapibus.</p>
-                        </div>
-                    </div>
-                    <div class="two">
-                        <div class="number">02</div>
-                        <div class="one_data">
-                            <h3>Data Analysis</h3>
-                            <p>Vivamus sagittis lacus vel augue laoreet.</p>
-                        </div>
-                    </div>
-                    <div class="three">
-                        <div class="number">03</div>
-                        <div class="one_data">
-                            <h3>Finalize Product</h3>
-                            <p>Cras mattis consectetur purus sit amet.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            ._bottom_details {
+                /* font-family: Urbanist, sans-serif; */
+                word-spacing: 4px;
+                font-size: 20px;
+                color: rgb(135, 132, 132);
+                padding: 10px 0;
+            }
 
-            <!-- Section 3 - part 4 -->
-            <div class="section_3_div4">
-                <div class="section_3_div_img"><img src="./Images/Home_Section_3.png" alt=""></div>
-                <div class="section_3_div_details">
-                    <h4>WHY CHOOSE US?</h4>
-                    <h5>We bring solutions to make life easier.</h5>
-                    <h6><i class="fa-sharp fa-solid fa-angle-down"></i> Professional Design</h6>
-                    <h6><i class="fa-sharp fa-solid fa-angle-down"></i> Top-Notch Support</h6>
-                    <h6><i class="fa-sharp fa-solid fa-angle-down"></i> Header and Slider Options</h6>
-                </div>
-            </div>
-        </div>
-    </Section>
+            button {
+                /* font-family: Urbanist, sans-serif; */
+                color: white;
+                font-size: 15.5px;
+                font-weight: bold;
+                background-color: rgb(90, 184, 246);
+                padding: 18px 32px;
+                border: none;
+                border-radius: 35px;
+            }
+        }
+    }
+
+
+    /* section 2 Bottom */
+    .section2_bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            p {
+                /* font-family: Urbanist, sans-serif; */
+                color: rgb(103, 95, 95);
+                font-size: 18px;
+                padding-top: 50px;
+            }
+        }
+
+        .section_image_div {
+            display: flex;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                padding-top: 20px;
+
+                li {
+                    list-style: none;
+                    padding: 0 40px;
+
+                    img {
+                        height: auto;
+                        width: 105px;
+                    }
+                }
+            }
+        }
+    }
 
 
 
-    <!-- section 4 -->
-    <section name="section_4">
-        <div class="section_4">
+    /* Section 3 */
+    .section_3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px 0;
+        width: 100%;
+        margin: 13% 0;
+        background-color: #f5fbfc;
+        overflow: hidden;
 
-            <!-- Section 4 - part 1 -->
-            <div class="section4_div1">
-                <div class="section4_div1_one">
-                    <h5>COMPANY FACTS</h5>
-                    <h3>We are proud of our design team</h3>
-                    <p>Just sit back and relax while we take care of your business needs for you.</p>
-                </div>
-                <div class="section4_div1_two" style="margin-left: 200px;">
-                    <i class="fas fa-project-diagram"></i>
-                    <h4>1000+</h4>
-                    <p>Completed Projects</p>
-                </div>
-                <div class="section4_div1_two">
-                    <i class="fa-regular fa-user-plus"></i>
-                    <h4>50K+</h4>
-                    <p>Happy Customers</p>
-                </div>
-                <div class="section4_div1_two">
-                    <i class='fas'>&#xf559;</i>
-                    <h4>20+</h4>
-                    <p>Awards Won</p>
-                </div>
-            </div>
+        .spcer {
+            width: 100%;
+            max-width: 100%;
+            position: absolute;
+            top: 25%;
+            z-index: -1;
 
-            <!-- Section 4 - part 2 -->
-            <div class="section4_div2">
-                <div>
-                    <img src="./Images/Home_line_image/card images-person/image1.jpg" alt="">
-                    <h4>Coriss Ambady</h4>
-                    <h6>FINANCIAL ANALYST</h6>
-                    <p>Fermentum massa justo sit amet risus morbi leo.</p>
-                    <ul>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-twitter" viewBox="0 0 16 16">
-                                <path
-                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
-                            </svg>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                            </svg>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-globe" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
-                            </svg>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="./Images/Home_line_image/card images-person/image2.jpg" alt="">
-                    <h4>Cory Zamora</h4>
-                    <h6>MARKETING SPECIALIST</h6>
-                    <p>Fermentum massa justo sit amet risus morbi leo.</p>
-                    <ul>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-twitter" viewBox="0 0 16 16">
-                                <path
-                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
-                            </svg>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                            </svg>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-globe" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
-                            </svg>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="./Images/Home_line_image/card images-person/image3.jpg" alt="">
-                    <h4>Nikolas Brooten</h4>
-                    <h6>SALES MANAGER</h6>
-                    <p>Fermentum massa justo sit amet risus morbi leo.</p>
-                    <ul>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-twitter" viewBox="0 0 16 16">
-                                <path
-                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
-                            </svg>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                            </svg>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-globe" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
-                            </svg>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="./Images/Home_line_image/card images-person/image4.jpg" alt="">
-                    <h4>Jackie Sanders</h4>
-                    <h6>INVESTMENT PLANNER</h6>
-                    <p>Fermentum massa justo sit amet risus morbi leo.</p>
-                    <ul>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-twitter" viewBox="0 0 16 16">
-                                <path
-                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
-                            </svg>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                            </svg>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-globe" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
-                            </svg>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            svg {
+                min-width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                /* background-image: linear-gradient(rgb(228, 241, 255), white); */
+                background-size: cover;
+            }
+        }
 
-            <!-- Section 4 - part 3 -->
-            <div class="section4_div3">
-                <h5>LATEST PROJECTS</h5>
-                <h3>Check out some of our awesome projects with creative ideas and great design.</h3>
-            </div>
+        .spcer2 {
+            width: 100%;
+            max-width: 100%;
+            position: absolute;
+            top: 390%;
+            z-index: -1;
+            rotate: 180deg;
+            transform: scaleX(-1);
 
-            <!-- Section 4 - part 4 -->
-            <div class="section4_div4">
-                <div>
-                    <img src="./Images/Home_slide/slide1.jpg" alt="">
-                    <br>
-                    <h5>Cras Fermentum Sem</h5>
-                    <p>MOBILE DESIGN</p>
-                </div>
-                <div>
-                    <img src="./Images/Home_slide/slide2.jpg" alt="">
-                    <br>
-                    <h5>Cras Fermentum Sem</h5>
-                    <p>WEB DESIGN</p>
-                </div>
-                <div>
-                    <img src="./Images/Home_slide/slide3.jpg" alt="">
-                    <br>
-                    <h5>Cras Fermentum Sem</h5>
-                    <p>STATIONARY</p>
-                </div>
-                <div>
-                    <img src="./Images/Home_slide/slide4.jpg" alt="">
-                    <br>
-                    <h5>Cras Fermentum Sem</h5>
-                    <p>WEB Application</p>
-                </div>
-                <div>
-                    <img src="./Images/Home_slide/slide5.jpg" alt="">
-                    <br>
-                    <h5>Cras Fermentum Sem</h5>
-                    <p>Web Design</p>
-                </div>
-                <div>
-                    <img src="./Images/Home_slide/slide6.jpg" alt="">
-                    <br>
-                    <h5>Cras Fermentum Sem</h5>
-                    <p>STATIONARY</p>
-                </div>
-            </div>
-            <div class="Movement_button">
-                <i class='fas'>&#xf060;</i>
-                <i class='fas'>&#xf061;</i>
-            </div>
-        </div>
-    </section>
+            svg {
+                min-width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                /* background-image: linear-gradient(rgb(228, 241, 255), white); */
+                background-size: cover;
+            }
+        }
 
+        .section_3_div1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* font-family: Urbanist, sans-serif; */
+            width: 50%;
+            padding: 0;
+            margin: 50px 0;
 
+            .h4 {
+                font-size: 15px;
+                font-weight: 600;
+                /* font-family: Urbanist, sans-serif; */
+                color: rgb(0, 187, 255);
+                padding: 0;
+                margin: 0;
+            }
 
-    <!-- Section 5 -->
-    <section name="section_5">
-        <div class="section_5">
+            div {
+                display: flex;
 
-            <!-- Section 5 - part 1 -->
-            <div class="section_5_div1">
-                <h4>HAPPY CUSTOMERS</h4>
-                <h2>Don't take our word for it. See what customers are saying about us.</h2>
-            </div>
+                .h6 {
+                    font-weight: 600;
+                    word-spacing: 7px;
+                    font-size: 40px;
+                    text-align: center;
+                    /* font-family: Urbanist, sans-serif; */
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
 
-            <!-- Section 5 - part 2 -->
-            <div class="section_5_div2">
-                <div class="section_5_div2_1">
-                    <div class="section_5_div2_div">
-                        <li><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span
-                                class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span
-                                class="fa fa-star checked"></span></li>
-                        <p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula
-                            porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</p>
-                        <div>
-                            <img src="./Images/Home_line_image/card images-person/image1.jpg" alt="">
-                            <div>
-                                <h4>name</h4>
-                                <h4>domain</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section_5_div2_div">
-                        <li><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span
-                                class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span
-                                class="fa fa-star checked"></span></li>
-                        <p>“Fusce dapibus, tellus ac cursus tortor mauris condimentum fermentum massa justo sit amet.
-                            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis
-                            consectetur
-                            purus sit amet fermentum. Aenean lacinia bibendum nulla sed.”</p>
-                        <div>
-                            <img src="./Images/Home_line_image/card images-person/image1.jpg" alt="">
-                            <div>
-                                <h4>name</h4>
-                                <h4>domain</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        .section_3_div2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 100%;
+            /* font-family: Urbanist, sans-serif; */
 
-                <div class="section_5_div2_2">
-                    <div class="section_5_div2_div">
-                        <li><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span
-                                class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span
-                                class="fa fa-star checked"></span></li>
-                        <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                            dolor auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui
-                            consectetur adipiscing elit.”</p>
-                        <div>
-                            <img src="./Images/Home_line_image/card images-person/image1.jpg" alt="">
-                            <div>
-                                <h4>name</h4>
-                                <h4>domain</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section_5_div2_div">
-                        <li><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span
-                                class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span
-                                class="fa fa-star checked"></span></li>
-                        <p>“Etiam adipiscing tincidunt elit convallis felis suscipit ut. Phasellus rhoncus tincidunt
-                            auctor.
-                            Nullam eu sagittis mauris. Donec non dolor ac elit aliquam tincidunt at at sapien. Aenean
-                            tortor
-                            libero condimentum ac laoreet vitae.”</p>
-                        <div>
-                            <img src="./Images/Home_line_image/card images-person/image1.jpg" alt="">
-                            <div>
-                                <h4>name</h4>
-                                <h4>domain</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 500px;
+                width: 30%;
+                padding: 0 30px;
 
-                <div class="section_5_div2_3">
-                    <div class="section_5_div2_div">
-                        <li><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span
-                                class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span
-                                class="fa fa-star checked"></span></li>
-                        <p>“Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue.
-                            Cum
-                            sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.”</p>
-                        <div>
-                            <img src="./Images/Home_line_image/card images-person/image1.jpg" alt="">
-                            <div>
-                                <h4>name</h4>
-                                <h4>domain</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section_5_div2_div">
-                        <li><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span
-                                class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span
-                                class="fa fa-star checked"></span></li>
-                        <p>“Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus
-                            magnis dis montes, nascetur ridiculus mus. Donec sed odio dui. Nulla vitae elit libero.”</p>
-                        <div>
-                            <img src="./Images/Home_line_image/card images-person/image1.jpg" alt="">
-                            <div>
-                                <h4>name</h4>
-                                <h4>domain</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                img {
+                    max-width: 105%;
+                    min-height: 230px;
+                    height: 230px;
+                    max-height: 230px;
+                }
 
-            <!-- Section 5 - part 3 -->
-            <div class="section_5_div3">
-                <!-- FAQ -->
-                <div>
-                    <h6>FAQ</h6>
-                    <h4>If you don't see an answer to your question, you can send us an email from our contact form.
-                    </h4>
-                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                        Nullam quis risus eget urna mollis ornare.</p>
-                    <button>All FAQ</button>
-                </div>
-                <div>
-                    <li><i class="fa-sharp fa-solid fa-chevron-down"></i> How do I get my subscription receipt?</li>
-                    <li><i class="fa-sharp fa-solid fa-chevron-down"></i> Are there any discounts for people in need?
-                    </li>
-                    <li><i class="fa-sharp fa-solid fa-chevron-down"></i> Do you offer a free trial edit?</li>
-                    <li><i class="fa-sharp fa-solid fa-chevron-down"></i> How do I reset my Account password?</li>
-                </div>
-            </div>
-        </div>
-    </section>
+                h5 {
+                    padding: 35px 0 0 0;
+                    margin: 0;
+                    font-size: 24px;
+                    color: rgb(66, 63, 63);
+                }
+
+                p {
+                    max-width: 70%;
+                    padding: 10px 0;
+                    min-width: 300px;
+                    margin: 0;
+                    text-align: center;
+                    color: rgb(81, 83, 81);
+                    line-height: 30px;
+                    font-size: 17px;
+                }
+
+                button {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 17px;
+                    background: none;
+                    border: none;
+                    color: rgb(0, 187, 255);
+                }
+            }
+        }
+
+        .section_3_div3 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 100px 0;
+
+            div {
+                width: 50%;
+                max-width: 50%;
+
+            }
+
+            .section_3_div3_div1 {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                width: 50%;
+                padding: 0 70px 0 95px;
+
+                h3 {
+                    padding: 10px 0;
+                    margin: 0;
+                    font-size: 15px;
+                    color: rgb(0, 187, 255);
+                    font-weight: bold;
+                }
+
+                h4 {
+                    padding: 15px 0;
+                    margin: 0;
+                    color: rgb(70, 68, 68);
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+
+                p {
+                    padding: 10px 0;
+                    color: grey;
+                    font-size: 16px;
+                    line-height: 28px;
+                    /* font-weight: 550; */
+                    font-weight: bold;
+                    word-spacing: 3px;
+                }
+
+                button {
+                    border: none;
+                    font-size: 16px;
+                    width: fit-content;
+                    padding: 14px 33px;
+                    border-radius: 28px;
+                    color: white;
+                    font-weight: bold;
+                    background-color: rgb(90, 184, 246);
+                }
+            }
+
+            .section_3_div3_div2 {
+                display: flex;
+                flex-direction: column;
+                padding-left: 2%;
+
+                .one {
+                    display: flex;
+                    min-width: 80%;
+                    padding: 28px 0 28px 30px;
+                    margin: 20px 0;
+                    box-shadow: 0 4px 8px 0 rgba(244, 243, 243, 0.916), 0 6px 20px 0 rgba(241, 239, 239, 0.938);
+                }
+
+                .two {
+                    display: flex;
+                    min-width: 80%;
+                    padding: 28px 0 28px 30px;
+                    margin: 20px 0 20px 62px;
+                    box-shadow: 0 4px 8px 0 rgba(244, 243, 243, 0.916), 0 6px 20px 0 rgba(241, 239, 239, 0.938);
+                }
+
+                .three {
+                    display: flex;
+                    min-width: 80%;
+                    padding: 28px 0 28px 30px;
+                    margin: 20px 0 20px 15px;
+                    box-shadow: 0 4px 8px 0 rgba(244, 243, 243, 0.916), 0 6px 20px 0 rgba(241, 239, 239, 0.938);
+                }
+
+                .number {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: rgb(193, 246, 246);
+                    text-align: center;
+                    color: rgb(75, 167, 186);
+                    font-size: 22px;
+                    height: 60px;
+                    width: 60px;
+                    font-weight: 550;
+                    border-radius: 50%;
+                    margin: 0 25px 0 0;
+                }
+
+                .one_data {
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 35px;
+                    min-width: 80%;
+
+                    h3 {
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    p {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .section_3_div4 {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin: 60px 0;
+
+            div {
+                width: 60%;
+            }
+
+            .section_3_div_img {
+                padding: 0 110px;
+
+                img {
+                    align-items: center;
+                    width: 100%;
+                }
+            }
+
+            .section_3_div_details {
+                display: flex;
+                width: 30%;
+                height: auto;
+                flex-direction: column;
+                justify-content: center;
+
+                h4 {
+                    font-size: 15px;
+                    padding: 0;
+                    color: rgb(72, 152, 221);
+                    font-weight: bold;
+                }
+
+                h5 {
+                    color: rgb(88, 87, 87);
+                    padding: 0;
+                    margin: 20px 0;
+                    word-spacing: 10px;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+
+                h6 {
+                    padding: 0;
+                    margin: 0;
+                    line-height: 30px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    /* height: 25px; */
+
+                    i {
+                        font-size: 14px;
+                        /* margin: 0 5px 0 0; */
+                        color: rgb(108, 205, 205);
+                    }
+
+                    #hover_collapse,
+                    #hover_collapse2,
+                    #hover_collapse3 {
+                        opacity: 0;
+                        height: 0;
+                        transition-timing-function: linear;
+                        transition: 0.5s;
+                    }
+
+                    button {
+                        background: none;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
 
 
-    <!-- Section 6 - footer part-->
-    <section name="section 6">
-        <div class="section_6">
-            <div class="section_6_div1">
-                <div>
-                    <h4>Join our community by using our services and grow your business.</h4>
-                </div>
-                <div><button>Try it For Free</button></div>
-            </div>
-            <hr>
-            <div class="section_6_div2">
-                <div class="section_6_div2_div1">
-                    <img src="./Images/logo_sandbox.png" alt="">
-                    <p>© 2024 Sandbox. All rights reserved.</p>
-                    <li>Icons</li>
-                </div>
-                <div class="section_6_div2_div2">
-                    <h4>Get in Touch</h4>
-                    <p>Moonshine St. 14/05 Light City, London, United Kingdom</p>
-                    <br>
-                    <a href="">info@email.com</a>
-                    <p>00 (123) 456 78 90</p>
-                </div>
-                <div class="section_6_div2_div3">
-                    <h4>Learn More</h4>
-                    <p>About Us</p>
-                    <p>Our Story</p>
-                    <p>Projects</p>
-                    <p>Terms of Use</p>
-                    <p>Privacy Policy</p>
-                </div>
-                <div class="section_6_div2_div4">
-                    <h4>Our Newsletter</h4>
-                    <p>Subscribe to our newsletter to get our news & deals delivered to you.</p>
-                    <br>
-                    <li><input type="text" placeholder="Email address"><button>Join</button></li>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    /* section 4 */
+    .section_4 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 100px 0;
+
+        .section4_div1 {
+            display: flex;
+            align-items: center;
+            padding: 0 100px;
+            width: 100%;
+
+            .section4_div1_one {
+                width: 25%;
+                padding: 0;
+                margin: 0;
+                word-spacing: 4px;
+
+                h5 {
+                    width: 100%;
+                    color: dodgerblue;
+                    font-weight: bold;
+                    font-size: 15px;
+                    padding: 10px 0;
+                    margin: 0;
+                }
+
+                h3 {
+                    width: 100%;
+                    font-weight: bold;
+                    font-size: 38px;
+                    padding: 10px 0;
+                    margin: 0;
+                }
+
+                p {
+                    width: 100%;
+                    padding: 10px 0;
+                    font-size: 16px;
+                }
+            }
+
+            .section4_div1_two {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 16px;
+                width: auto;
+                margin: 0 80px;
+
+                i {
+                    font-size: 24px;
+                    color: dodgerblue;
+                    background-color: rgb(226, 238, 249);
+                    text-align: center;
+                    width: fit-content;
+                    height: auto;
+                    padding: 20px;
+                    margin: 0;
+                    border-radius: 50%;
+                }
+
+                h4 {
+                    margin: 16px 0;
+                    font-weight: bold;
+                    font-size: 38px;
+                }
+
+                p {
+                    font-style: 28px;
+                }
+            }
+        }
+
+        .section4_div2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 0;
+            width: 100%;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                margin: 0 18px;
+                width: 300px;
+                height: fit-content;
+                box-shadow: 0 4px 8px 0 rgba(244, 243, 243, 0.916), 0 6px 20px 0 rgba(241, 239, 239, 0.938);
+                padding: 50px 25px;
+
+                img {
+                    height: 90px;
+                    width: 90px;
+                    border-radius: 50%;
+                }
+
+                h4 {
+                    font-size: 21px;
+                    margin: 0;
+                    padding: 10px 0;
+                }
+
+                h6 {
+                    font-size: 14px;
+                    color: grey;
+                    margin: 0;
+                    padding: 5px 0;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 10px 0;
+                }
+
+                ul {
+                    display: flex;
+                    list-style: none;
+
+                    li {
+                        padding: 0 5px;
+
+                        svg {
+                            color: dodgerblue;
+                        }
+                    }
+                }
+            }
+        }
+
+        .section4_div3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 50px;
+            text-align: center;
+            margin: 8% 0 0 0;
+        }
+
+        h5 {
+            color: dodgerblue;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 40px;
+            color: rgb(42, 41, 41);
+            width: 52%;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .section4_div4 {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        width: 100%;
+        max-width: 94%;
+        padding: 50px 0 0 6%;
+
+        div {
+            min-width: 40%;
+            margin: 0 47px;
+
+            img {
+                height: 370px;
+                width: 620px;
+            }
+
+            h5 {
+                font-size: 21px;
+                margin: 0;
+                padding: 15px 0;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 550;
+                color: gray;
+                margin: 0;
+            }
+        }
+    }
+
+    .Movement_button {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: 16px;
+            color: white;
+            padding: 15px;
+            margin: 20px 15px;
+            background-color: rgb(90, 184, 246);
+            /* background-color: dodgerblue; */
+            border-radius: 50%;
+        }
+    }
+
+    /* section 5 */
+    .section_5 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 100px 0;
+        padding: 120px 0;
+
+        .section_5_div1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 100px;
+
+            h4 {
+                margin: 0;
+                font-size: 16px;
+                font-weight: bold;
+                color: dodgerblue;
+                padding: 20px 0;
+            }
+
+            h2 {
+                margin: 0;
+                text-align: center;
+                max-width: 50%;
+                font-size: 38px;
+                font-weight: bold;
+                word-spacing: 5px;
+                color: rgb(63, 62, 62);
+                /* padding: 10px 0; */
+            }
+        }
+
+        .section_5_div2 {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            max-width: 100%;
+            padding: 0 7%;
+
+            .section_5_div2_1 {
+                display: flex;
+                flex-direction: column;
+                margin: 10px 15px;
+            }
+
+            .section_5_div2_2 {
+                display: flex;
+                flex-direction: column;
+                margin: 10px 15px;
+            }
+
+            .section_5_div2_3 {
+                display: flex;
+                flex-direction: column;
+                margin: 10px 15px;
+            }
+
+            .section_5_div2_div {
+                display: block;
+                height: fit-content;
+                width: 400px;
+                padding: 20px 35px;
+                margin-top: 25px;
+                font-size: 18px;
+                color: gray;
+                line-height: 27px;
+                font-weight: 550;
+                box-shadow: 0 4px 8px 0 rgba(221, 222, 222, 0.916), 0 6px 20px 0 rgba(206, 206, 206, 0.938);
+
+                li {
+                    list-style: none;
+                    font-size: 12px;
+                    color: gold;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 20px;
+
+                    img {
+                        height: 80px;
+                        width: 80px;
+                        border-radius: 50%;
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        * {
+                            font-size: 24px;
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .section_5_div3 {
+            display: flex;
+            padding-left: 7%;
+            margin: 150px 0;
+
+            div {
+                width: 50%;
+
+                h6 {
+                    color: dodgerblue;
+                    padding: 10px 0;
+                    font-weight: 600;
+                    margin: 10px 0;
+                }
+
+                h4 {
+                    font-size: 42px;
+                    color: rgb(46, 46, 46);
+                    font-weight: 600;
+                    margin: 10px 0;
+                }
+
+                p {
+                    font-size: 17px;
+                    width: 84%;
+                    margin: 20px 0;
+                }
+
+                button {
+                    width: 110px;
+                    height: 50px;
+                    border: none;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: white;
+                    background-color: rgb(90, 184, 246);
+                    /* -color: rgb(73, 163, 253); */
+                    border-top-right-radius: 40px;
+                    border-top-left-radius: 40px;
+                    border-bottom-right-radius: 40px;
+                    border-bottom-left-radius: 40px;
+                }
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    height: 64px;
+                    width: 85%;
+                    padding: 0 16px;
+                    font-weight: 600;
+                    margin: 24px 0;
+                    font-size: 18px;
+                    list-style: none;
+                    box-shadow: 0 4px 8px 0 rgba(221, 220, 220, 0.916), 0 6px 20px 0 rgba(204, 204, 204, 0.938);
+
+                    i {
+                        font-size: 12px;
+                        margin: 0 4px;
+                        color: dodgerblue;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
 
 
-    <!-- Javascript Tag, CDN, File-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
-    <script src="./Home.js"></script>
-</body>
-</body>
 
-</html>
+    /* Section 6 */
+    .section_6 {
+        background-color: #060606;
+        color: white;
+        padding: 120px 0;
+
+        li {
+            list-style: none;
+        }
+
+        .section_6_footer {
+            svg {
+                position: absolute;
+                top: 775vh;
+                z-index: -1;
+            }
+
+        }
+
+        .section_6_div1 {
+            display: flex;
+            margin: 60px 0;
+
+            div {
+                display: flex;
+                flex-direction: row-reverse;
+                width: 50%;
+                padding: 0 100px;
+
+                h4 {
+                    font-size: 38px;
+                    font-weight: 600;
+                }
+
+                button {
+                    height: 55px;
+                    width: 170px;
+                    font-size: 17px;
+                    color: white;
+                    font-weight: bold;
+                    background-color: rgb(90, 184, 246);
+                    /* background-color: dodgerblue; */
+                    border-top-left-radius: 50px;
+                    border-bottom-left-radius: 50px;
+                    border-top-right-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                    border: none;
+                }
+            }
+        }
+
+        .section_6_div2 {
+            display: flex;
+            margin: 60px 0 0 0;
+
+            div {
+                margin: 0 0 0 7%;
+                width: 15%;
+
+                h4 {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                p {
+                    width: 70%;
+                    margin: 6px 0;
+                    padding: 0;
+                }
+            }
+
+            .section_6_div2_div4 {
+                width: 25%;
+
+                li {
+                    list-style: none;
+                }
+
+                .li {
+                    list-style: none;
+                    display: flex;
+                    width: fit-content;
+                    border: 0.1px solid gray;
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                    border-top-left-radius: 8px;
+                    align-items: center;
+
+                    input {
+                        font-size: 18px;
+                        border-bottom-left-radius: 8px;
+                        border-top-left-radius: 8px;
+                        background: transparent;
+                        text-align: center;
+                        border: none;
+                    }
+
+                    button {
+                        font-size: 18px;
+                        height: 55px;
+                        width: 120px;
+                        border-top-right-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                        background-color: rgb(90, 184, 246);
+                        /* background-color: dodgerblue; */
+                        color: white;
+                        font-weight: bold;
+                        border: none;
+                    }
+                }
+
+                h4 {
+                    border: none;
+                }
+
+                p {
+                    border: none;
+                }
+            }
+        }
+    }
+}
