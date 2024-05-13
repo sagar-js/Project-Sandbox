@@ -193,7 +193,7 @@ html {
             width: 100%;
             max-width: 100%;
             position: absolute;
-            top: 25%;
+            top: 123%;
             z-index: -1;
 
             svg {
@@ -209,7 +209,7 @@ html {
             width: 100%;
             max-width: 100%;
             position: absolute;
-            top: 390%;
+            top: 400%;
             z-index: -1;
             rotate: 180deg;
             transform: scaleX(-1);
@@ -783,7 +783,7 @@ html {
                 color: gray;
                 line-height: 27px;
                 font-weight: 550;
-                box-shadow: 0 4px 8px 0 rgba(221, 222, 222, 0.916), 0 6px 20px 0 rgba(206, 206, 206, 0.938);
+                box-shadow: 0 4px 8px 0 rgba(235, 236, 236, 0.916), 0 6px 20px 0 rgba(243, 241, 241, 0.938);
 
                 li {
                     list-style: none;
@@ -869,7 +869,7 @@ html {
                     margin: 24px 0;
                     font-size: 18px;
                     list-style: none;
-                    box-shadow: 0 4px 8px 0 rgba(221, 220, 220, 0.916), 0 6px 20px 0 rgba(204, 204, 204, 0.938);
+                    box-shadow: 0 4px 8px 0 rgba(226, 225, 225, 0.916), 0 6px 20px 0 rgba(255, 255, 255, 0.938);
 
                     i {
                         font-size: 12px;
@@ -897,7 +897,7 @@ html {
         .section_6_footer {
             svg {
                 position: absolute;
-                top: 775vh;
+                top: 873%;
                 z-index: -1;
             }
 
@@ -953,6 +953,10 @@ html {
                     margin: 6px 0;
                     padding: 0;
                 }
+            }
+
+            svg {
+                margin: 0 10px;
             }
 
             .section_6_div2_div4 {
